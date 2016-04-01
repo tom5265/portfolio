@@ -4,6 +4,43 @@
     #platui > #variables;
 
     [plat-control="home-vc"] {
-
+        /* variables */
+        @primaryColor: #373F51;
+        @secondaryColor: #A9BCD0;
+        @thirdColor: #D8DBE2;
+        @fourthColor: #58a4b0;
+        @black: #1B1B1E;
+        /* variables */
+        
+        .container {
+            font-family: Helvetica, sans-serif;
+            position: relative;
+            top: 3.8em;
+        }  
+        .header-view {
+            background-color: @primaryColor;
+            text-align: center;
+            color: @secondaryColor;
+            padding-top: 2em;
+        }
+        .info h1 {
+            margin: 0;
+            padding: 0;
+        }
+        #pic {
+            height: 18em;
+            width: 14em;
+            border-radius: 10%;
+        }     
+        .experience {
+            text-align: center;
+        }
+        .experience p {
+            width: 70%;
+            margin: 0 auto;
+        }
+        #jobs {
+            background-color: @secondaryColor;
+        }
     }
 }
