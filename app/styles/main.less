@@ -2,7 +2,15 @@
 
 @import '../src/viewcontrols/home/home.vc.less';
 
- #left {
+         /* variables */
+        @primaryColor: #373F51;
+        @secondaryColor: #A9BCD0;
+        @thirdColor: #D8DBE2;
+        @fourthColor: #58a4b0;
+        @black: #1B1B1E;
+        /* variables */
+
+        #left {
             float: left;
             font-weight: bold;
             font-size: 1.5em;
@@ -17,7 +25,8 @@
            position: fixed;
            line-height: 4em;
            z-index: 9999;
-           box-shadow: 0 4px 2px -2px gray;
+           box-shadow: 0 4px 2px -2px @thirdColor;
+           font-family: 'Playfair Display', serif;
         }      
         .nav li {
             list-style: none;
@@ -27,5 +36,5 @@
             vertical-align: middle;
         }
         .nav li a {
-            color: black;
+            color: #6E6E6E;
         }
