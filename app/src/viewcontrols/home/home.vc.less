@@ -23,22 +23,27 @@
             padding-top: 2em;
             padding: 5em 0 5em 0;
         }
+        @media only screen and (max-width: 560px) {
+            body {
+                background-color: lightblue;
+            }
+        }
         .info {
             display: flex; 
             flex-direction: column;  
             align-items: center;
-        }
-        .info h1 {
+            h1 {
             margin: 0;
             padding: 0;
+            }
         }
         .para {
             display: flex;
             flex-direction: column;    
-            align-items: center;   
-        }
-        .para p {
+            align-items: center;
+            p {
             width: 75%;
+            }   
         }
         #pic {
             height: 18em;
@@ -49,17 +54,21 @@
             text-align: center;
             padding: 2em 0 2em 0;
             color: @black;
-        }
-        .experience h2 {
+            h2 {
             padding: 0;
-        }
-        .experience p {
+             }
+             p {
             width: 70%;
             margin: 0 auto;
+            }
         }
-        #depot, #unc, #zoom, #loot {
+        #depot, #unc {
             height: 5em;
             width: 18em;
+        }
+        #zoom, #loot {
+            height: 4.5em;
+            width: 16em;
         }
         #skills  {
             background-color: @black;
@@ -72,6 +81,7 @@
             ul {
                 display: table;
                 margin: 0 auto;
+                font-size: 2em;
             }
         }
         #biz-e {
@@ -99,9 +109,16 @@
             background-color: #fff;
             padding: 2em 0 2em 0;
             border-top: 1px solid @black;
-        }
-        .footer p {
+            p {
             margin: 0;
+            }
+            a {
+                color: #6E6E6E;
+            }
+            a:hover {
+                color: @black;
+                transition: color 0.4s ease;
+            }
         }
         .linked-in p {
             margin-bottom: 0.25em;
