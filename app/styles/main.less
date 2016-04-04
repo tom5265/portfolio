@@ -1,54 +1,9 @@
 @import '../../node_modules/platypusui/dist/platypus';
 
+@import '../src/templatecontrols/my-navbar/my-navbar.tc.less';
+
 @import '../src/viewcontrols/home/home.vc.less';
 
-         /* variables */
-        @primaryColor: #373F51;
-        @secondaryColor: #A9BCD0;
-        @thirdColor: #D8DBE2;
-        @fourthColor: #58a4b0;
-        @black: #1B1B1E;
-        /* variables */
-
-        .left {
-            float: left;
-            font-weight: bold;
-            font-size: 1.5em;
-        }
-       .right {
-            float: right;
-        }
-        .nav {
-           text-align: center;
-           background-color: #fff;
-           width: 100%;
-           position: fixed;
-           line-height: 4em;
-           z-index: 9999;
-           box-shadow: 0 4px 2px -2px @thirdColor;
-           font-family: 'Playfair Display', serif;
-        }  
-        #burger {   
-             height: 2em;
-             width: 2em;
-             vertical-align: middle;
-             display: none;
-        } 
-        @media only screen and (max-width: 900px) {
-            #hider {
-                display: none;
-            }
-            #burger {
-                display: initial;
-            }
-        }
-        .nav li {
-            list-style: none;
-            display: inline;
-            margin: -0.2em 2em 0 2em;
-            text-transform: uppercase;
-            vertical-align: middle;
-        }
-        .nav li a {
-            color: #6E6E6E;
-        }
+* {
+     font-family: 'Playfair Display', serif;
+}

@@ -1,0 +1,73 @@
+& {
+    #platui > #media;
+    #platui > #mixins;
+    #platui > #variables;
+
+    [plat-control="my-navbar"] {
+                /* variables */
+        @primaryColor: #373F51;
+        @secondaryColor: #A9BCD0;
+        @thirdColor: #D8DBE2;
+        @fourthColor: #58a4b0;
+        @black: #1B1B1E;
+        @navbar-height: 3.5em;
+        /* variables */
+        #burger {   
+             height: 2em;
+             width: 2em;
+             display: none;
+        } 
+        @media only screen and (max-width: 900px) {
+            #hider {
+                display: none;
+            }
+            #burger {
+                display: initial;
+            }
+            hr {
+                display: none;
+            }
+        }
+        .nav {
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            height: @navbar-height;
+            background-color: #fff;
+            color: grey;
+            font-weight: bold;
+            text-align: right;
+            box-shadow: 0 4px 2px -2px @thirdColor;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                padding: 0 1.5em;
+                height: @navbar-height;
+                line-height: @navbar-height;
+                vertical-align: middle;
+            }
+            a {
+                color: grey;
+                &:hover {
+                    color: black;
+                    transition: color 0.4s ease;
+                }
+
+            }  
+                        
+        }
+    }
+    .right {
+        float: right;
+    }
+    .left {
+        float: left;
+    }
+    .hamburglar {
+        background-image: url('../images/hamburger.png');
+    }
+}
