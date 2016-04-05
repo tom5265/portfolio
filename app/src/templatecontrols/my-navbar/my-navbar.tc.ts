@@ -7,17 +7,6 @@ export default class MynavbarTemplateControl extends ui.TemplateControl {
         
     }
 
-
-    burgerToggle(): void {
-        let dropDown = document.getElementById('responsive-menu');
-        console.log(dropDown);
-        if (dropDown.className = "hidden") {
-       dropDown.className = 'show';              
-    }
-    else {
-        dropDown.className = "hidden"
-    }
-    }
 }
 
 register.control('my-navbar', MynavbarTemplateControl);
