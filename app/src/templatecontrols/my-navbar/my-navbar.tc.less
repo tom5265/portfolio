@@ -21,7 +21,7 @@
         }
         .hamburglar {
             height: @navbar-height;
-            width: 2em;
+            width: 1em;
         }      
         @media only screen and (max-width: 900px) {
             #hider {
@@ -29,6 +29,11 @@
             }
             #burger {
                 display: initial;
+            }
+        }
+        @media only screen and (max-width: 240px) {
+            .logo {
+                display: none;
             }
         }
         .nav {
@@ -43,15 +48,15 @@
             box-shadow: 0 2px 3px @thirdColor;
             .logo {
                 float: left;
-                width: 14em;
+                width: 10em;
                 text-align: center;
                 height: @navbar-height;
                 a {
                     margin-top: 0;
                     margin-bottom: 0;
-                    padding-top: 0;                   
-                    padding-left: 1em;
-                    font-size: 2.2em;
+                    padding-top: 0;
+                    padding-left: 0.3em;                   
+                    font-size: 1.8em;
                 }
             }
             ul {
