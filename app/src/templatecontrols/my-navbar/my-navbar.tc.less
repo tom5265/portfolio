@@ -13,8 +13,6 @@
         @navbar-height: 3.5em;
         /* variables */
         #burger {   
-             height: 2em;
-             width: 2em;
              display: none;
         } 
         @media only screen and (max-width: 900px) {
@@ -22,7 +20,7 @@
                 display: none;
             }
             #burger {
-                display: initial;
+                display: inline-block;
             }
             hr {
                 display: none;
@@ -56,18 +54,13 @@
                     color: black;
                     transition: color 0.4s ease;
                 }
-
-            }  
-                        
+            }                  
+        }
+        .hamburglar img {
+            height: 3.2em;
+            width: 3.2em; 
         }
     }
-    .right {
-        float: right;
-    }
-    .left {
-        float: left;
-    }
-    .hamburglar {
-        background-image: url('../images/hamburger.png');
-    }
 }
+    
+
