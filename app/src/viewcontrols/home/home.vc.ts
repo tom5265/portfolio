@@ -7,7 +7,6 @@ export default class HomeViewControl extends BaseViewControl {
     context: any = {
         
     };
-    
-
+  
 }
 register.viewControl('home-vc', HomeViewControl);

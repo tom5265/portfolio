@@ -6,6 +6,11 @@ export default class MynavbarTemplateControl extends ui.TemplateControl {
     context: any = {
         
     }
+    
+    myFunction(): void {
+    document.getElementsByClassName("nav-links")[0].classList.toggle("responsive");
+}
+    
 
 }
 
