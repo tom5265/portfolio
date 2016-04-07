@@ -6,7 +6,7 @@
     [plat-control="home-vc"] {
         /* variables */
         @primaryColor: #373F51;
-        @secondaryColor: #A9BCD0;
+        @secondaryColor: #0E3386;
         @thirdColor: #D8DBE2;
         @fourthColor: #58a4b0;
         @black: #1B1B1E;
@@ -22,35 +22,30 @@
             }
         }
         .header-view {
-            background-color: @black;
+            background: url('../../images/background3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             text-align: center;
-            color: @secondaryColor;
+            color: #fff;
             padding: 5em 0;
-        }
-        .info {
-            display: flex; 
-            flex-direction: column;  
-            align-items: center;
-            h1 {
-            margin-bottom: 0.5em;
-            padding: 0;
+            height: 70vh;
+            .info {
+                padding: 17.5vh 0;
+              h1 {
+                margin-top: -2em;
+            }
+              h3 {
+                margin-top: 8em;
+            }
             }
         }
-        .para {
-            display: flex;
-            flex-direction: column;    
-            align-items: center;
-            p {
-            width: 75%;
-            }   
-        }
-        #pic {
-            height: 15em;
-            width: 11.5em;
-            border-radius: 10%;
-            -webkit-border-radius: 10%;
-            -moz-border-radius: 10%;
-        }     
+        // #pic {
+        //     height: 15em;
+        //     width: 11.5em;
+        //     border-radius: 20%;
+        //     -webkit-border-radius: 20%;
+        //     -moz-border-radius: 20%;
+        // }     
         .experience {
             text-align: center;
             padding: 2em 0 2em 0;
@@ -73,7 +68,7 @@
         }
         #skills  {
             background-color: @black;
-            color: @secondaryColor;
+            color: #A9BCD0;
             padding: 5em 0 5em 0;
             h2 {
                 text-align: center;
