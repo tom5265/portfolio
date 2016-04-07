@@ -8,7 +8,7 @@ export default class MynavbarTemplateControl extends ui.TemplateControl {
     }
     
     myFunction(): void {
-    document.getElementsByClassName("nav-links")[0].classList.toggle("responsive");
+    document.getElementsByClassName("menu")[0].classList.toggle("slide-down");
 }
     
 
