@@ -7,28 +7,28 @@ export default class HomeViewControl extends BaseViewControl {
     context: any = {
  
     };
-    
-   debris() {  let scroll = (function() {
+ 
+   rollScroll() {  let scroll = (function() {
 
-    let elementPosition = function(a) {
+    let elementPosition = function(a:any) {
         return function() {
             return a.getBoundingClientRect().top;
         };
     };
 
-    let scrolling = function( elementID ) {
+    let scrolling = function( elementID: any ) {
 
-        let el = document.getElementById( elementID ),
+        let el:any = document.getElementById( elementID ),
             elPos = elementPosition( el ),
             duration = 200,
             increment = Math.round( Math.abs( elPos() )/40 ),
             time = Math.round( duration/increment ),
             prev = 0,
-            E;
+            E:any;
 
         function scroller() {
             E = elPos();
-
+            
             if (E === prev) {
                 return;
             } else {
@@ -56,5 +56,7 @@ export default class HomeViewControl extends BaseViewControl {
 })();
 scroll.To('educ-link');
    }
+   
+
 }
 register.viewControl('home-vc', HomeViewControl);

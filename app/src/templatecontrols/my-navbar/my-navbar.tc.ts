@@ -7,11 +7,6 @@ export default class MynavbarTemplateControl extends ui.TemplateControl {
         
     }
     
-    myFunction(): void {
-    document.getElementsByClassName("menu")[0].classList.toggle("slide-down");
-}
-    
-
 }
 
 register.control('my-navbar', MynavbarTemplateControl);
