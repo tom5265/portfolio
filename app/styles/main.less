@@ -1,9 +1,5 @@
 @import '../../node_modules/platypusui/dist/platypus';
 
-@import '../src/templatecontrols/my-navbar/my-navbar.tc.less';
-
-@import '../src/viewcontrols/home/home.vc.less';
-
  @black: #1B1B1E;
 @secondaryColor: #0E3386;
 
@@ -33,3 +29,14 @@
         display: block;
     }
 }
+
+@media screen and (min-width: 750px) {
+              .drawer {
+                  display: none;
+              }
+        }
+
+@import '../src/templatecontrols/maindrawer/maindrawer.tc.less';
+@import '../src/templatecontrols/my-navbar/my-navbar.tc.less';
+
+@import '../src/viewcontrols/home/home.vc.less';
