@@ -4,6 +4,40 @@
     #platui > #variables;
 
     [plat-control="maindrawer"] {
+         @black: #1B1B1E;
+    @secondaryColor: #0E3386;
 
+    .drawer {
+        font-family: Montserrat, Helvetica, sans-serif;
+        position: fixed;
+        background-color: #d3d3d3;
+        text-align: right;
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: block;
+            padding: 1em;
+            border-bottom: 1px solid @black;
+            &:hover {
+                border-bottom: 1px solid #fff;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        a {
+            color: @black;
+            text-transform: lowercase;
+            font-weight: bold;
+            display: block;
+        }
     }
+
+    @media screen and (min-width: 750px) {
+                .drawer {
+                    display: none;
+                }
+            }
+        }
 }
