@@ -57,7 +57,36 @@ export default class HomeViewControl extends BaseViewControl {
         })();
         scroll.To('scroll-div');
     }
-
+    
+    loaded() {
+        let markup = document.getElementById('markup');
+        let dynamic = document.getElementById('dynamic');
+        let frameworks = document.getElementById('frameworks');
+        markup.addEventListener('mouseenter', function () {
+            document.getElementById('markers').classList.toggle('shake-slow');
+            document.getElementById('markers').classList.toggle('shake-constant');
+        })
+        markup.addEventListener('mouseleave', function () {
+            document.getElementById('markers').classList.toggle('shake-slow');
+            document.getElementById('markers').classList.toggle('shake-constant');
+        });
+        dynamic.addEventListener('mouseenter', function () {
+            document.getElementById('front-end').classList.toggle('shake-slow');
+            document.getElementById('front-end').classList.toggle('shake-constant');
+        })
+        dynamic.addEventListener('mouseleave', function () {
+            document.getElementById('front-end').classList.toggle('shake-slow');
+            document.getElementById('front-end').classList.toggle('shake-constant');
+        });
+        frameworks.addEventListener('mouseenter', function () {
+            document.getElementById('framing').classList.toggle('shake-slow');
+            document.getElementById('framing').classList.toggle('shake-constant');
+        })
+        frameworks.addEventListener('mouseleave', function () {
+            document.getElementById('framing').classList.toggle('shake-slow');
+            document.getElementById('framing').classList.toggle('shake-constant');
+        });
+    }
 
 }
 register.viewControl('home-vc', HomeViewControl);
