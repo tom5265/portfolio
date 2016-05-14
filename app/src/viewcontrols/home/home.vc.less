@@ -12,10 +12,10 @@
         @black: #1B1B1E;
         /* variables */         
         * {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Raleway', sans-serif;
         }
         @media screen and (max-width: 900px) {
-            hr {
+            .mobile-hide {
                 display: none;
             }
             #skills ul {
@@ -48,6 +48,9 @@
             }
         }
         @media screen and (max-width: 320px) {
+            .row-hide {
+                display: none;
+            }
               .header-view .info {
                  padding: 2em 0;
                h1 {
@@ -61,6 +64,24 @@
             }
               .button-outline {
                  display: none;
+            }
+        }
+        #iPad {
+            width: 20em;
+            height: auto;
+            padding-top: 0.4em;
+            max-width: 100%;
+        }
+        #covers {
+            width: 25em;
+            height: auto;
+            padding-top: 1em;
+            max-width: 92%;
+        }
+        .link-finder {
+            a:hover { 
+                color: @secondaryColor;
+                transition: 0.4s color ease-in-out;
             }
         }
         .experience {
@@ -99,6 +120,7 @@
             text-align: center;
             .lists ul {
                 padding: 0;
+                list-style-type: none;
             }
             h2 {
                 text-align: center;
@@ -123,6 +145,9 @@
             height: 1px;
             width: 75%;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        .mobile-hide {
+            width: 25%;
         }
         #jobs {
             background-color: #fff;       
@@ -185,6 +210,7 @@
         }
         .exp-wrapper {
             background-color: #fff;
+            padding: 1.5em 0;
         }
         .skills-wrapper {
             background-color: @black;
@@ -196,17 +222,17 @@
         svg {
             width: 4em;
             height: auto;
-            padding: 0 1em 1em 1em;
+            padding: 0 0.8em 1em 0.8em;
         }
         .platypus {
             width: 6.75em;
             height: 2.5em;
-            padding: 0 1em 1.8em 1em;
+            padding: 0 0.8em 1.8em 0.6em;
         }
         .typescript {
             width: 5em;
             height: 2.5em;
-            padding: 0 1em 1.8em 1em;
+            padding: 0 0.8em 1.8em 0.8em;
         }
     }
 }
